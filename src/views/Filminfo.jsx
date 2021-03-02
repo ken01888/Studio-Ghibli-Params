@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 const FilmInfo = () => {
     const [film, setFilm] = useState(null);
@@ -16,10 +16,10 @@ const FilmInfo = () => {
             } catch (err) {
                 alert(err)
 
-            }
+            };
 
-        })()
-    }, [filminfo])
+        })();
+    }, [filminfo]);
 
     return (
         <div className="container">
@@ -35,7 +35,7 @@ const FilmInfo = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default FilmInfo;

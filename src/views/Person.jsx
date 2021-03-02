@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 const Person = () => {
     const { personinfo } = useParams();
@@ -18,8 +18,8 @@ const Person = () => {
 
             }
 
-        })()
-    }, [personinfo])
+        })();
+    }, [personinfo]);
 
     return (
         <div className="container">
@@ -31,13 +31,13 @@ const Person = () => {
                         <div className="card-subtitle mb-2 text-center">{person?.gender}</div>
                         <div className="card-subtitle mb-2 text-center">{person?.age}</div>
                         <div className="card-text">{person?.description}</div>
-                        <div className='text-center'><a href={`${person?.url}`} style={{textDecoration:'none'}} className='btn bg-dark text-white'>Person Api Info</a></div>
+                        <div className='text-center'><a href={`${person?.url}`} style={{ textDecoration: 'none' }} className='btn bg-dark text-white'>Person Api Info</a></div>
 
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Person;

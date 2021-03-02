@@ -15,12 +15,12 @@ const Image = () => {
             </a>
         </React.Fragment>
 
-    )
+    );
 
 
 
 
-}
+};
 
 
 export default Image; 

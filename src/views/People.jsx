@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const People = () => {
     const [people, setPeople] = useState([])
@@ -14,12 +14,16 @@ const People = () => {
             } catch (err) {
                 alert(err)
 
-            }
+            };
 
-        })()
-    }, [])
+        })
+    ();
+
+    }, []);
+
 
     return (
+
         <ul className="list-group">
 
             {people.map(val => (
@@ -32,9 +36,9 @@ const People = () => {
 
 
 
-    )
+    );
 
 
-}
+};
 
 export default People;

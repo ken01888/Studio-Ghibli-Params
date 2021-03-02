@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Films = () => {
     const [films, setFilms] = useState([])
@@ -15,8 +15,8 @@ const Films = () => {
                 alert(err)
             }
 
-        })()
-    }, [])
+        })();
+    }, []);
 
     return (
         <ul className="list-group">
@@ -31,9 +31,9 @@ const Films = () => {
 
 
 
-    )
+    );
 
 
-}
+};
 
 export default Films;

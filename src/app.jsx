@@ -1,11 +1,11 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route} from 'react-router-dom'
-import Films from './views/Films.jsx'
-import Filminfo from './views/Filminfo.jsx'
-import People from './views/People'
-import Person from './views/Person'
-import Links from './components/Nav.jsx'
-import Image from './components/image'
+import React from 'react';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import Films from './views/Films.jsx';
+import Filminfo from './views/Filminfo.jsx';
+import People from './views/People';
+import Person from './views/Person';
+import Links from './components/Nav.jsx';
+import Image from './components/image';
 
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
                 </Route>
             </Switch>
         </BrowserRouter>
-    )
-}
+    );
+};
 
 export default App;
